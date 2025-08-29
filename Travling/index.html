@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Trips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+    <header>
+        <h1>Welcome to Our Tourist Trips</h1>
+    </header>
+
+    <!-- Trip Prices Section -->
+    <section id="trips">
+        <h2>Our Popular Trips</h2>
+        <div class="trip-cards">
+            <div class="trip-card">
+                <img src="trip1.jpg" alt="Trip 1">
+                <h3>Beach Paradise</h3>
+                <p>Relax at the best beaches with a guided tour.</p>
+                <p class="price">$499</p>
+            </div>
+            <div class="trip-card">
+                <img src="trip2.jpg" alt="Trip 2">
+                <h3>Mountain Adventure</h3>
+                <p>Climb the highest peaks and enjoy the stunning views.</p>
+                <p class="price">$699</p>
+            </div>
+            <div class="trip-card">
+                <img src="trip3.jpg" alt="Trip 3">
+                <h3>City Discovery</h3>
+                <p>Explore the rich history and culture of the city.</p>
+                <p class="price">$399</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@touristtrips.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Location: 123 Travel St, City, Country</p>
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
