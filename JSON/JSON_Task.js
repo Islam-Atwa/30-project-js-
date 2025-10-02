@@ -12,3 +12,5 @@ let user = {
 // object to JSON    | JSON to object
 let json = JSON.parse(JSON.stringify(user));
 console.log(json); // "{"name":"John Smith","age":35}"
+
+
