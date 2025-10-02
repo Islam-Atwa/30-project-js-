@@ -28,6 +28,13 @@
 // obj is a valid JSON object or array
 // 2 <= JSON.stringify(obj).length <= 105
 
+// ------------------------------
+
+
+// - Approach 1: Using JSON.stringify
+//    - Time complexity: O(n), where n is the size of object
+//    - Space complexity: O(n), where n is the size of object
+
 var isEmpty = function(obj) {
 
 // stringify: Convert a JavaScript object or value to a JSON string
@@ -39,5 +46,22 @@ var isEmpty = function(obj) {
     }
     else {return false} // لو لا يبقي الاوبجكت مش فاضي
 };
-
 // ودا عشان ان {} طولها 2 و [] طولها 2 بردو
+
+
+
+// Approach 3: Using loop
+
+// Complexity Analysis:
+// The time and space is O(1) because we are just checking if we can enter the loop or not.
+//  - Time complexity: O(1)
+//  - Space complexity: O(1)
+
+var isEmpty = function(obj) {
+    // loop through the object
+    // حلقة تكرار بتمر علي كل المفاتيح الموجودة في الكائن وأول ما تلاقي مفتاح تدخل جوه الحلقه
+    for (const _ in obj){ 
+        return false; // لو لقت مفتاح في الكائن يبقي مش فاضي
+    }
+    return true;   // لو ملاقاش مفاتيح في الكائن يبقي فاضي
+}
